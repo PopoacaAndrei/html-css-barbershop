@@ -4,6 +4,7 @@
     --heading-color: #fff;
     --text-font-family: 'Open Sans', sans-serif;
     --heading-font-family: 'Raleway', sans-serif;
+    --section-background-color: #fff;
 }
 
 h1,
@@ -16,8 +17,33 @@ h6 {
     font-family: 'Raleway', sans-serif;
 }
 
+.header-container-content {
+    width: 100%;
+}
+
+.header-container-content .hero-section {
+    padding: 50px;
+    background-color: #363636;
+}
+
+.hero-section .control-buttons {
+    margin-top: 142px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .global-header {
     background-color: #363636;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 50px 40px 100px;
+}
+
+.global-header .main-navigation ul {
+    display: flex;
+    width: 450px;
+    justify-content: space-evenly;
 }
 
 .global-header .main-navigation a,
@@ -49,8 +75,33 @@ ul {
     background-color: transparent;
 }
 
+.header-container {
+    display: flex;
+}
+
+.global-aside {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.global-aside-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+img.dash {
+    width: 1px;
+    height: 60px;
+}
+
 .global-header .main-navigation a.active {
     color: var(--link-active-color);
+}
+
+.global-header-aside {
+    background-color: var(--section-background-color);
 }
 
 .global-header .social-links {
@@ -77,6 +128,29 @@ ul {
     letter-spacing: 3.6px;
 }
 
-.hero-section {
+.section-light {
+    background-color: var(--section-background-color);
+}
+
+.section-light.about-section {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.section-light.about-section img {
+    width: 270px;
+}
+
+.about-section .section-description {
+    width: 600px;
+}
+
+.section-dark {
     background-color: #363636;
+}
+
+.prices {
+    display: flex;
+    margin-top: 46px;
 }

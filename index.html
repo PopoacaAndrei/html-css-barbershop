@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Barbershop</title>
+        <link rel="stylesheet" href="reset.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -20,133 +21,159 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <!-- Header section -->
-        <header class="global-header">
-            <a href="index.html">
-                <img src="images/logo.svg" alt="Barbershop logo" />
-            </a>
-            <!-- Nav section -->
-            <nav class="main-navigation">
-                <ul>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="">Services and Prices</a></li>
-                    <li><a href="">Barbers</a></li>
-                    <li><a href="">Contacts</a></li>
-                </ul>
-            </nav>
-
-            <a href="tel:+38 044 111 11 11" class="phone-number"
-                >+38 044 111 11 11</a
-            >
-
-            <button class="button">Book a service</button>
-
-            <section>
-                <a
-                    href="https://www.youtube.com/"
-                    rel="noopener nooreferrer nofollow"
-                    target="_blank"
-                    class="social-links"
-                    >Youtube
+        <div class="container header-container">
+            <aside class="global-aside">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Barbershop logo" />
                 </a>
 
-                <a
-                    href="https://www.instagram.com"
-                    rel="noopener nooreferrer nofollow"
-                    target="_blank"
-                    class="social-links active"
-                    >Instagram
-                </a>
+                <div class="global-aside-links">
+                    <a
+                        class="social-link"
+                        href="https://youtube.com"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                    >
+                        Youtube
+                    </a>
+                    <a
+                        class="social-link active"
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                    >
+                        Instagram
+                    </a>
+                    <img
+                        src="images/header_section-divider.png"
+                        alt="|"
+                        class="dash"
+                    />
+                </div>
+            </aside>
 
-                <img
-                    src="images/dash_navigation_links.png"
-                    alt="link separator"
-                />
-            </section>
-        </header>
+            <div class="header-container-content">
+                <!-- Header section -->
+                <header class="global-header">
+                    <!-- Nav section -->
+                    <nav class="main-navigation">
+                        <ul>
+                            <li>
+                                <a href="about.html" class="active">About</a>
+                            </li>
+                            <li><a href="">Services and Prices</a></li>
+                            <li><a href="">Barbers</a></li>
+                            <li><a href="">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <a href="tel:+38 044 111 11 11" class="phone-number"
+                            >+38 044 111 11 11</a
+                        >
+                        <button class="button">Book a service</button>
+                    </div>
+                </header>
+
+                <!-- Hero section -->
+                <section class="hero-section">
+                    <img src="images/landing-dash.svg" alt="-" />
+                    <h3>A hair salon for men in Kyiv</h3>
+                    <h1 title="Barbershop" class="hero-heading">BarberShop</h1>
+
+                    <p>
+                        We are experts in trendy men's haircuts. We work
+                        quickly, carefully, and tastefully.
+                    </p>
+
+                    <div class="control-buttons">
+                        <button>Prev</button>
+                        <button>Next</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
         <!-- Main section -->
         <main>
-            <section class="hero-section">
-                <hr />
-
-                <span>A hair salon for men in Kyiv</span>
-
-                <h1 title="Barbershop" class="hero-heading">BarberShop</h1>
-
-                <p>
-                    We are experts in trendy men's haircuts. We work quickly,
-                    carefully, and tastefully.
-                </p>
-            </section>
-
-            <section>
+            <!-- About -->
+            <section class="section section-light about-section">
                 <img src="images/barber1.png" alt="Stilizarea barbei" />
-
                 <img src="images/barber2.png" alt="Utilizarea lamei" />
 
-                <span><img src="images/dash_about.png" />About</span>
+                <div class="section-description">
+                    <img
+                        src="images/dash_about.png"
+                        width="60px"
+                        height="1px"
+                    />
+                    <h3>About</h3>
+                    <h2>The Best Barbershop in Your City</h2>
 
-                <h2>The Best Barbershop in Your City</h2>
+                    <p>
+                        If you want to add more confidence to your image, you
+                        are definitely in the right place.
+                    </p>
 
-                <p>
-                    If you want to add more confidence to your image, you are
-                    definitely in the right place.
-                </p>
+                    <p class="small-text">
+                        We are a team that never rests on its laurels and yearns
+                        for change. And once you fall into the hands of our
+                        master, you will never be the same again. We are a team
+                        that is always on the same wavelength with clients.
+                        Therefore, we are always ready to improve everyone who
+                        comes to us!
+                    </p>
 
-                <p>
-                    We are a team that never rests on its laurels and yearns for
-                    change. And once you fall into the hands of our master, you
-                    will never be the same again. We are a team that is always
-                    on the same wavelength with clients. Therefore, we are
-                    always ready to improve everyone who comes to us!
-                </p>
-
-                <button>book a service</button>
+                    <button class="button">book a service</button>
+                </div>
             </section>
 
             <!-- Services and prices -->
-            <section>
-                <h3>Spend time in the company of the best craftsmen</h3>
+            <section class="section section-dark">
+                <h3 class="section-sub-heading">
+                    Spend time in the company of the best craftsmen
+                </h3>
                 <h2>Services and Prices</h2>
-                <ul>
-                    <li>
-                        <span>Men's Haircut</span>
-                        <span>from 300 UAH </span>
-                    </li>
-                    <li>
-                        <span>Beard Trim</span>
-                        <span>Beard Trim</span>
-                    </li>
-                    <li>
-                        <span>Mustache Trim</span>
-                        <span>from 200 UAH</span>
-                    </li>
-                    <li>
-                        <span>Straight Razor Shave</span>
-                        <span>from 200 UAH</span>
-                    </li>
-                </ul>
+                <div class="prices">
+                    <ul class="services-list">
+                        <li>
+                            <span>Men's Haircut</span>
+                            <span>from 300 UAH </span>
+                        </li>
+                        <li>
+                            <span>Beard Trim</span>
+                            <span>Beard Trim</span>
+                        </li>
+                        <li>
+                            <span>Mustache Trim</span>
+                            <span>from 200 UAH</span>
+                        </li>
+                        <li>
+                            <span>Straight Razor Shave</span>
+                            <span>from 200 UAH</span>
+                        </li>
+                    </ul>
 
-                <ul>
-                    <li>
-                        <span>Trainee Haircut </span>
-                        <span>from 50 UAH </span>
-                    </li>
-                    <li>
-                        <span>Buzz Cut</span>
-                        <span>from 200 UAH </span>
-                    </li>
-                    <li>
-                        <span>Kids Haircut (&lsaquo;12 y.o.)</span>
-                        <span>from 300 UAH </span>
-                    </li>
-                    <li>
-                        <span>Gray Coverage</span>
-                        <span>from 200 UAH </span>
-                    </li>
-                </ul>
+                    <ul class="services-list">
+                        <li>
+                            <span>Trainee Haircut </span>
+                            <span>from 50 UAH </span>
+                        </li>
+                        <li>
+                            <span>Buzz Cut</span>
+                            <span>from 200 UAH </span>
+                        </li>
+                        <li>
+                            <span>Kids Haircut (&lsaquo;12 y.o.)</span>
+                            <span>from 300 UAH </span>
+                        </li>
+                        <li>
+                            <span>Gray Coverage</span>
+                            <span>from 200 UAH </span>
+                        </li>
+                    </ul>
+                </div>
 
-                <button>Book a Service</button>
+                <button class="button">Book a Service</button>
             </section>
 
             <section>
@@ -229,10 +256,59 @@
                 </ul>
             </section>
 
-            <section>
+            <!-- Contacts -->
+            <section class="section">
                 <h2>Contacts</h2>
-                <address></address>
+                <address>
+                    <span
+                        ><img src="./images/icon_map.svg" /> Main Street, 7A
+                        Kyiv, 08132</span
+                    >
+                    <br />
+                    <a class="no-underline" href="tel:+380441111111"
+                        ><img src="./images/icon_phone.svg" />+38 044 111 11
+                        11</a
+                    >
+                    <br />
+                    <a href="mailto:barbershop@email.com"
+                        ><img
+                            src="./images/icon_email.svg"
+                        />barbershop@email.com</a
+                    >
+                </address>
+                <div>
+                    <h3>working hours</h3>
+                    <p>
+                        Daily from <time datetime="9:00AM">9:00 AM</time> till
+                        <time datetime="9:00AM">22:00 PM</time>
+                    </p>
+                </div>
             </section>
         </main>
+
+        <!-- Footer -->
+        <footer>
+            <span>&#169; Copyright 2022</span>
+            <ul>
+                <li>
+                    <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                    >
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://youtube.com"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                    >
+                        Youtube
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </body>
 </html>
